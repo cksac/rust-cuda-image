@@ -36,6 +36,8 @@ EXPOSE 22
 # RunPod specific settings
 COPY --chmod=755 runpod.sh /runpod.sh
 
+RUN rm -rf /workspace/*
+
 # Set the entry point
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 

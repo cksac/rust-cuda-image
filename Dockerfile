@@ -11,6 +11,7 @@ RUN apt-get upgrade -y
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     git-lfs \
+    ssh \
     && rm -rf /etc/ssh/ssh_host_*
 
 # Install dumb-init
